@@ -1,0 +1,14 @@
+print("welcome to rock paper scissors game".title())
+answer="Yes"
+while answer=="Yes":
+ player1=input("rock paper or scissors? ".title()).lower()
+ player2=input("rock paper or scissors? ".title()).lower()
+ if (player1=="rock" and player2=="paper") or (player1=="paper" and player2=="scissors") or (player1=="scissors" and player2=="rock"):
+  print("cingratulations! player2 you win".title())
+ elif (player1=="paper" and player2=="rock") or (player1=="scissors" and player2=="paper") or (player1=="rock" and player2=="scissors"):
+  print("congratulations! player1 you win".title()) 
+ elif player1==player2:
+  print("tie".upper())
+ else:
+  print("you made a mistake please make sure of your informations".title())
+ answer=input("do you want to play again? ".title()).title()
